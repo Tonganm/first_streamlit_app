@@ -45,7 +45,7 @@ except URLError as e:
 
 #import requests
 
-streamlit.text(fruityvice_response.json())
+#streamlit.text(fruityvice_response.json())
 
 # Take the json version of the response and normalize it
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())

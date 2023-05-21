@@ -12,10 +12,8 @@ streamlit.text('🥗 Kale, Spinach & Rocket Smoothie')
 streamlit.text('🐔Hard-Boiled Free-Range Egg')
 streamlit.text('🥑🍞 Avocado Toast')
 
-
 #import pandas
 streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
-
 
 my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
 my_fruit_list = my_fruit_list.set_index('Fruit')
@@ -45,23 +43,6 @@ try:
        
 except URLError as e:
     streamlit.error()
-      
-      
-#streamlit.write('The user entered ', fruit_choice)
-
-#import requests
-
-#streamlit.text(fruityvice_response.json())
-
-# Take the json version of the response and normalize it
-#fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
-# write your own comment - what does this do?
-#streamlit.dataframe(fruityvice_normalized)
-
-# don't run anything past here while we troubleshoot
-#streamlit.stop()
-
-#import snowflake.connector
 
 streamlit.header("The fruit load list contains:")
 #Snowflake-related functions
